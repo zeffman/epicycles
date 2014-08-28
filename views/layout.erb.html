@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Epicycles</title>
+  <body>
+    <%= yield %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjs/0.23.0/math.min.js"></script>
+    <script src="<%= url("/app.js?#{rand(1000000000)}") %>"></script>
+  </body>
+</head>
+</html>
